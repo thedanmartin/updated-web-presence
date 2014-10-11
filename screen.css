@@ -20,9 +20,9 @@ h1,h2,h3,h4,h5  {
 
 }
 
-h1  {
+h2  {
 
-  font-size: 2.5em;
+  font-size: 1.5em;
 
 }
 
@@ -44,6 +44,8 @@ a:hover {
 
 header {
 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 2.5em;
   background-color: #003366; /* dark blue */
   color: #FFFFFF;
   padding-top: 1em;
@@ -86,9 +88,8 @@ footer {
 
   font-size: 1em;
   width: 100%;
-  height: 1.5em;
-  bottom: 0;
-  left: 0;
+  height: 2em;
+  padding-left: 1em;
   background: #E6E6E6; /* light grey */
   font-style: italic;
   color: #000000;
@@ -98,6 +99,7 @@ footer {
 /* media query stuff */
 
 @media screen and (min-width: 64em) {
+
   #now  {
     background-color: #CCCCCC;
     }
@@ -110,6 +112,7 @@ footer {
   }
 
 @media screen and (max-width: 37.5em){
+
 	#now {
 		background-color: #CCCC99;
 	}
@@ -119,4 +122,8 @@ footer {
   #then {
     background-color: #CCCCCC;
   }
+  #header {
+    font-size: 2em;
+  }
+
 }
