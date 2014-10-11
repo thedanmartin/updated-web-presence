@@ -123,7 +123,7 @@ footer {
 
 /* media query stuff */
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 90em) {
 
   #now  {
     background-color: #CCCCCC;
@@ -137,7 +137,7 @@ footer {
 
 }
 
-@media screen and (max-width: 37.5em){
+@media screen and (max-width: 64em){
 
 	#now {
 		background-color: #CCCC99;
@@ -156,37 +156,21 @@ footer {
 
 /* grid */
 .row {
-  margin: 0 -10px;
-  margin-bottom: 20px;
+  margin: 0 -.625em;
+  margin-bottom: 1.25em;
 }
 .row:last-child {
   margin-bottom: 0;
 }
 [class*="col-"] {
-  padding: 10px;
+  padding: .625em;
 }
 
-@media all and ( min-width: 600px ) {
+@media all and ( min-width: 37.5em ) {
 
-  .col-2-3 {
-    float: left;
-    width: 66.66%;
-  }
-  .col-1-2 {
-    float: left;
-    width: 50%;
-  }
-  .col-1-3 {
-    float: left;
-    width: 33.33%;
-  }
   .col-1-4 {
     float: left;
     width: 25%;
-  }
-  .col-1-8 {
-    float: left;
-    width: 12.5%;
   }
 
 }
