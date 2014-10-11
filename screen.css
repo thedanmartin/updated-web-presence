@@ -84,6 +84,13 @@ article {
 
 }
 
+img {
+
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
 footer {
 
   font-size: 1em;
@@ -109,7 +116,8 @@ footer {
   #then {
     background-color: #CCCC99;
     }
-  }
+
+}
 
 @media screen and (max-width: 37.5em){
 
