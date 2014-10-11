@@ -29,7 +29,7 @@ h1  {
 a {
 
   font-weight: bold;
-  color: #003366;
+  color: #003366; /* dark blue */
   text-decoration: none;
 
 }
@@ -44,7 +44,7 @@ a:hover {
 
 header {
 
-  background-color: #003366;
+  background-color: #003366; /* dark blue */
   color: #FFFFFF;
   padding-top: 1em;
   padding-left: 1em;
@@ -65,26 +65,25 @@ article {
 
 #now  {
 
-  background-color: #CCCCCC;
+  background-color: #CCCCCC; /* grey */
 
 }
 
 #then {
 
   margin-left: 5em;
-  background-color: #CCCC99;
+  background-color: #CCCC99; /* gold-ish */
 
 }
 
 #alsonow  {
 
-  background-color: #CCCCCC;
+  background-color: #CCCCCC; /* grey */
 
 }
 
-#footer {
+footer {
 
-  position: absolute;
   font-size: 1em;
   width: 100%;
   height: 1.5em;
@@ -94,4 +93,30 @@ article {
   font-style: italic;
   color: #000000;
 
+}
+
+/* media query stuff */
+
+@media screen and (min-width: 64em) {
+  #now  {
+    background-color: #CCCCCC;
+    }
+  #alsonow  {
+    background-color: #CCCCCC;
+    }
+  #then {
+    background-color: #CCCC99;
+    }
+  }
+
+@media screen and (max-width: 37.5em){
+	#now {
+		background-color: #CCCC99;
+	}
+	#alsonow  {
+    background-color: #CCCC99;
+  }
+  #then {
+    background-color: #CCCCCC;
+  }
 }
