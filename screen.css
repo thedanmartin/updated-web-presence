@@ -41,6 +41,7 @@ a:hover {
 }
 
 /* resets for grid */
+
 *,
 *:before,
 *:after {
@@ -121,9 +122,11 @@ footer {
 
 }
 
-/* media query stuff */
+/* media queries */
 
-@media screen and (min-width: 90em) {
+/* article colors change when screen resizes */
+
+@media screen and (min-width: 90em) {         /* 1440px */
 
   #now  {
     background-color: #CCCCCC;
@@ -137,7 +140,7 @@ footer {
 
 }
 
-@media screen and (max-width: 64em){
+@media screen and (max-width: 64em) {          /* 1024px */
 
 	#now {
 		background-color: #CCCC99;
@@ -148,13 +151,48 @@ footer {
   #then {
     background-color: #CCCCCC;
   }
-  #header {
-    font-size: 2em;
+  .col-1-4:nth-child(4n-1) {
+    clear: both;
+  }
+
+}
+
+@media screen and (max-width: 48em) {          /* 768px */
+
+	#now {
+		background-color: #FCFCFC;
+	}
+	#alsonow  {
+    background-color: #FCFCFC;
+  }
+  #then {
+    background-color: #ACAC6E;
+  }
+  .col-1-4:nth-child(4n-2) {
+    clear: both;
+  }
+
+}
+
+@media screen and (max-width: 30em) {          /* 480px */
+
+	#now {
+		background-color: #ACAC6E;
+	}
+	#alsonow  {
+    background-color: #ACAC6E;
+  }
+  #then {
+    background-color: #FCFCFC;
+  }
+  .col-1-4:nth-child(4n-3) {
+    clear: both;
   }
 
 }
 
 /* grid */
+
 .row {
   margin: 0 -.625em;
   margin-bottom: 1.25em;
